@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-    $("#about_scroll").fadeOut();   
+    $("#about_scroll").fadeOut();
     $("#experiences_scroll").fadeOut();
     $("#skills_scroll").fadeOut();
 
@@ -38,12 +38,21 @@ $( document ).ready(function() {
     });
 
     typewriter.typeString('Machine Learning.')
-    .pauseFor(1500)
-    .deleteAll()
-    .typeString('Big Data.')
-    .pauseFor(1500)
-    .deleteAll()
-    .typeString('Cloud Computing.')
-    .pauseFor(1500)
-    .start();
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('Big Data.')
+        .pauseFor(1500)
+        .deleteAll()
+        .typeString('Cloud Computing.')
+        .pauseFor(1500)
+        .start();
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 50 ) {
+            $('.scrolltop:hidden').stop(true, true).fadeIn();
+        } else {
+            $('.scrolltop').stop(true, true).fadeOut();
+        }
+    });
+    $(function(){$(".scroll").click(function(){$("html,body").animate({scrollTop:$(".thetop").offset().top},"1000");return false})})
 });
