@@ -9,7 +9,7 @@ body{
 
 .home-description{
 	font-weight: 200;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-size: 19px;
     padding-top: 15px;
     padding-bottom: 25px;
@@ -38,8 +38,7 @@ body{
 @media (min-width: 778px)
 {
 		.main{
-			height: 100vh;
-			overflow: hidden;
+			min-height: 100vh;
 		}
 
 		.img-rabbit{
@@ -47,21 +46,21 @@ body{
 		}
 
 		.btn-group-vertical{
-    		padding: 20px 87.5px;
+    		padding: 20px 88px;
     	}
 
     	.info{
-			font-family: 'Raleway';
+			font-family: 'Raleway', sans-serif;
 			line-height: 28px;
 		    font-size: 16px;
 		    padding-top: 15px;
 		    padding-right: 50px;
 		}
-		
+
 		.home-description{
 			padding-right: 90px;
 			padding-left: 90px;
-			
+
 		}
 }
 .img-rabbit{
@@ -72,10 +71,10 @@ body{
 	color: #111;
 	font-style: italic;
 	border: 1px solid #111;
-	border-radius: 0px !important;
+	border-radius: 0 !important;
 	transition: all 0.3s ease-in-out;
 	margin-bottom: 20px;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
 	}
 
@@ -87,12 +86,12 @@ body{
 p{
 	color: #585757;
 	font-size: 16px;
-	
+
 }
 
 .page-title{
 	text-transform: uppercase;
-	font-family: 'Josefin Sans';
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 /*Home Style*/
@@ -103,7 +102,7 @@ p{
 }
 
 .logo h4{
-	font-family: 'Josefin Sans';
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 
@@ -114,15 +113,15 @@ footer{
 
 
 .back{
-    width: 170px;    
-    font-family: 'Raleway';
+    width: 170px;
+    font-family: 'Raleway', sans-serif;
     font-size: 17px;
     font-style: italic;
     vertical-align: middle;
     text-align: center;
     display: block;
     clear: both;
-    margin-top: 70px;	 
+    margin-top: 70px;
 }
 
 .back i{
@@ -145,27 +144,27 @@ footer{
 }
 
 .btn-group-vertical{
-    font-family: "Josefin Sans";    
+    font-family: "Josefin Sans", sans-serif;
 }
 
 .about{
-	font-family: "Josefin Sans";
+	font-family: "Josefin Sans", sans-serif;
 	/*margin-top: 35px;*/
 	/*margin-bottom: 25px;*/
 	font-size: 32px;
-	
+
 }
 .form-control{
 	font-style: italic;
 	border-radius: 0;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 }
 
 .page-title{
-	
+
 	font-size: 32px;
-	font-family: "Josefin Sans";
+	font-family: "Josefin Sans", sans-serif;
 }
 
 .fa-heartbeat{
@@ -200,8 +199,7 @@ footer{
 }
 
 .submit{
-
-	font-family: 'Raleway'
+	font-family: 'Raleway', sans-serif;
 	font-size: 16px;
 }
 
@@ -211,12 +209,17 @@ footer{
 	font-size: 20px;
 	color: #3b3b3b;
 	line-height: 28px;
-	font-family: 'Raleway';
+	font-family: 'Raleway', sans-serif;
 	margin-top: 15px;
 	margin-bottom: 20px;
 	padding-right: 40px;
-
-	}
+}
+.light{
+	font-weight: 200;
+}
+.normal{
+	font-weight: 400;
+}
 .page-title:after{
 	width: 75%;
 	top: -9px;
@@ -228,22 +231,22 @@ footer{
 	bottom: -7px;
 }
 
-#watermark .marker{
+.watermark .marker{
 	position: absolute;
 	font-size: 60px;
 	opacity: 0.1;
-	font-family: "Josefin Sans";
+	font-family: "Josefin Sans", sans-serif;
 	text-transform: uppercase;
 	left: 0;
 	top: -5px;
 }
 
-#watermark{
+.watermark{
 	position: relative;
 }
 
 .item{
-	
+
 	background-color: #313131;
 	color: #f9f9f9;
 }
@@ -262,7 +265,7 @@ footer{
     width: 100%;
     position: absolute;
     top: calc(44% - 40px);
-		}
+}
 
 .owl-next{
 	right: 0;
@@ -274,24 +277,19 @@ footer{
 	left: 0;
 	padding-left: 1px;
 }
-
-
-
 .owl-theme .owl-controls .owl-nav [class*=owl-]{
 	position: absolute;
-	border-radius: 0px;
+	border-radius: 0;
 	font-size: 21px;
 	padding: 15px 20px;
-	margin: 0px;
-	background-color: #fff; 
+	margin: 0;
+	background-color: #fff;
 
 }
-
 .owl-theme .owl-controls .owl-nav [class*=owl-] i{
 	color: #333;
-	
-}
 
+}
 .owl-theme .owl-controls .owl-nav [class*=owl-]:hover{
 	background-color: #bb9e7d;
 	border-color: #bb9e7d;
@@ -310,5 +308,23 @@ footer{
   -vendor-animation-iteration-count: infinite;
 }
 .show{
+	display: block;
+}
+.job .date{
+	font-style: italic;
+	text-transform: uppercase;
+  	display: block;
+}
+.job .job-title{
+	font-size: 2em;
+	display: block;
+}
+.job .location{
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	padding: 0.1em 0 0.1em 0;
+}
+.job .desc{
 	display: block;
 }
