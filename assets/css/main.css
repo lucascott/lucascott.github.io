@@ -354,6 +354,14 @@ footer{
 #softskills h4{
 	padding-bottom: 1em;
 }
+a {
+	color: inherit;
+}
+a:focus, a:hover {
+	color: #111111;
+}
+
+
 /*
 For the scroll-to-top button
  */
