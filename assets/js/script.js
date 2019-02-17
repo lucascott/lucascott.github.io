@@ -1,8 +1,8 @@
 $( document ).ready(function() {
 
     $("#about_scroll").fadeOut();   
-    $("#work_scroll").fadeOut();
-    $("#contact_scroll").fadeOut();
+    $("#experiences_scroll").fadeOut();
+    $("#skills_scroll").fadeOut();
 
     $("#about").click(function(){
         $("#index").fadeOut();
@@ -10,17 +10,17 @@ $( document ).ready(function() {
         $('#about_left').addClass('animated slideInLeft');
         $('#about_right').addClass('animated slideInRight');
     });
-    $("#work").click(function(){
+    $("#experiences").click(function(){
         $("#index").fadeOut();
-        $("#work_scroll").fadeIn();
-        $('#work_left').addClass('animated slideInLeft');
-        $('#work_right').addClass('animated slideInRight');
+        $("#experiences_scroll").fadeIn();
+        $('#experiences_left').addClass('animated slideInLeft');
+        $('#experiences_right').addClass('animated slideInRight');
     });
-    $("#contact").click(function(){
+    $("#skills").click(function(){
         $("#index").fadeOut();
-        $("#contact_scroll").fadeIn();
-        $('#contact_left').addClass('animated slideInLeft');
-        $('#contact_right').addClass('animated slideInRight');
+        $("#skills_scroll").fadeIn();
+        $('#skills_left').addClass('animated slideInLeft');
+        $('#skills_right').addClass('animated slideInRight');
     });
 
     $(".back").click(function(){
@@ -46,5 +46,4 @@ $( document ).ready(function() {
     .typeString('Cloud Computing.')
     .pauseFor(1500)
     .start();
-
 });

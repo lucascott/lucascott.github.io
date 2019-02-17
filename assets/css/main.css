@@ -11,9 +11,9 @@ body{
 	font-weight: 200;
 	font-family: 'Raleway', sans-serif;
 	font-size: 19px;
-    padding-top: 15px;
-    padding-bottom: 25px;
-    line-height: 29px;
+	padding-top: 15px;
+	padding-bottom: 25px;
+	line-height: 29px;
 
 }
 
@@ -26,42 +26,42 @@ body{
 	color: #111;
 	font-size: 20px;
 	padding-bottom: 20px;
-	}
+}
 
 .social a:hover i{
 	color: #fff;
 	border-color: #6e85a0;
 	background-color: #6e85a0;
-	}
+}
 
 
 @media (min-width: 778px)
 {
-		.main{
-			min-height: 100vh;
-		}
+	.main{
+		min-height: 100vh;
+	}
 
-		.img-rabbit{
-			/*margin: 0 -15px;*/
-		}
+	.img-rabbit{
+		/*margin: 0 -15px;*/
+	}
 
-		.btn-group-vertical{
-    		padding: 20px 88px;
-    	}
+	.btn-group-vertical{
+		padding: 20px 88px;
+	}
 
-    	.info{
-			font-family: 'Raleway', sans-serif;
-			line-height: 28px;
-		    font-size: 16px;
-		    padding-top: 15px;
-		    padding-right: 50px;
-		}
+	.info{
+		font-family: 'Raleway', sans-serif;
+		line-height: 28px;
+		font-size: 16px;
+		padding-top: 15px;
+		padding-right: 50px;
+	}
 
-		.home-description{
-			padding-right: 90px;
-			padding-left: 90px;
+	.home-description{
+		padding-right: 90px;
+		padding-left: 90px;
 
-		}
+	}
 }
 .img-rabbit{
 	width: 100%;
@@ -76,13 +76,25 @@ body{
 	margin-bottom: 20px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
-	}
-
+}
+.nav > li > a:focus{
+	color: #111;
+}
 .btn-rabbit:hover{
 	color: #fff;
 	background-color: #6e85a0;
-	border-color: #6e85a0;}
-
+	border-color: #6e85a0;
+}
+.nav > li > .btn-rabbit:hover {
+	color: #111;
+}
+.nav-pills > li.active > .btn-rabbit:focus, .nav-pills > li.active > .btn-rabbit{
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	box-shadow: inset 0 3px 5px rgba(0,0,0,.125);
+	color: #fff;
+	background-color: #6e85a0;
+	border-color: #6e85a0;
+}
 p{
 	color: #585757;
 	font-size: 16px;
@@ -109,25 +121,25 @@ p{
 footer{
 	padding: 22px 0 10px 0;
 	font-style: italic;
-	}
+}
 
 
 .back{
-    width: 170px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    font-style: italic;
-    vertical-align: middle;
-    text-align: center;
-    display: block;
-    clear: both;
-    margin-top: 70px;
+	width: 170px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-style: italic;
+	vertical-align: middle;
+	text-align: center;
+	display: block;
+	clear: both;
+	margin-top: 70px;
 }
 
 .back i{
 	margin-left: -40px;
-    margin-right: 17px;
-    font-size: 20px;
+	margin-right: 17px;
+	font-size: 20px;
 }
 
 
@@ -144,7 +156,7 @@ footer{
 }
 
 .btn-group-vertical{
-    font-family: "Josefin Sans", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 }
 
 .about{
@@ -168,12 +180,12 @@ footer{
 }
 
 .fa-heartbeat{
-	    color: #bb9e7d;
+	color: #bb9e7d;
 }
 
 ::selection {
 	color: #fff;
-   	background-color: #bb9e7d;
+	background-color: #bb9e7d;
 }
 
 .bottom{
@@ -252,19 +264,19 @@ footer{
 }
 
 #owl-demo .item img{
-    display: block;
-    width: 100%;
-    height: auto;
-    /*margin-left: 0px;*/
+	display: block;
+	width: 100%;
+	height: auto;
+	/*margin-left: 0px;*/
 }
 
 .owl-theme .owl-controls {
-    margin-top: 10px;
-    margin-right: 10px;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    top: calc(44% - 40px);
+	margin-top: 10px;
+	margin-right: 10px;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	top: calc(44% - 40px);
 }
 
 .owl-next{
@@ -303,9 +315,9 @@ footer{
 	}
 }
 .custom_btn{
-  -vendor-animation-duration: 3s;
-  -vendor-animation-delay: 2s;
-  -vendor-animation-iteration-count: infinite;
+	-vendor-animation-duration: 3s;
+	-vendor-animation-delay: 2s;
+	-vendor-animation-iteration-count: infinite;
 }
 .show{
 	display: block;
@@ -313,7 +325,7 @@ footer{
 .job .date{
 	font-style: italic;
 	text-transform: uppercase;
-  	display: block;
+	display: block;
 }
 .job .job-title{
 	font-size: 2em;
@@ -327,4 +339,21 @@ footer{
 }
 .job .desc{
 	display: block;
+}
+.uni .uni-title{
+	font-size: 2em;
+	display: block;
+}
+.uni .location{
+	text-transform: uppercase;
+	font-weight: bold;
+	display: block;
+	padding: 0.1em 0 0.1em 0;
+}
+
+.tab-pane p{
+	padding-bottom: 1em;
+}
+#softskills h4{
+	padding-bottom: 1em;
 }
