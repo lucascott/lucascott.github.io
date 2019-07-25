@@ -2,6 +2,7 @@ var rangeSlider = document.getElementById("rs-range-line");
 var rangeBullet = document.getElementById("rs-bullet");
 
 rangeSlider.addEventListener("input", showSliderValue, false);
+ document.getElementById("rs-range-line").step = "10"; 
 
 function showSliderValue() {
   rangeBullet.innerHTML = rangeSlider.value;
