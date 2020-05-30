@@ -1,0 +1,2 @@
+hero-bg.jpg -> 1920*1053
+profile-img.jpg -> 600*600
