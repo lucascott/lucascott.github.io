@@ -1180,13 +1180,14 @@ CUSTOM CSS
 }
 
 .btn-primary {
-  color: #45505b;
-  background: #f2f3f5;
-  border-color: transparent;
+  background: #0563bb;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
   border-radius: 50px;
 }
 
 .btn-primary:hover {
-  color: #fff;
-  background: #0563bb;
+  background: #0678e3;
 }
