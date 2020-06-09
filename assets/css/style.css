@@ -968,15 +968,17 @@ section {
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  border-radius: 8px;
 }
 
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #1cbd66;
   text-align: center;
   padding: 15px;
   font-weight: 600;
+  border-radius: 8px;
 }
 
 .contact .php-email-form .loading {

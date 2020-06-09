@@ -90,7 +90,7 @@ jQuery(document).ready(function($) {
       }
     });
     if (ferror) return false;
-    else var str = $(this).serialize();
+    else var form_dict = $(this).serializeArray().reduce(function(m,o){  m[o.name] = o.value; return m;}, {});
 
     var this_form = $(this);
     var action = $(this).attr('action');
@@ -108,16 +108,19 @@ jQuery(document).ready(function($) {
     $.ajax({
       type: "POST",
       url: action,
-      data: str,
+      headers: {
+        'Content-Type':'application/json'
+      },
+      data: JSON.stringify(form_dict),
       success: function(msg) {
-        if (msg == 'OK') {
-          this_form.find('.loading').slideUp();
-          this_form.find('.sent-message').slideDown();
-          this_form.find("input:not(input[type=submit]), textarea").val('');
-        } else {
-          this_form.find('.loading').slideUp();
-          this_form.find('.error-message').slideDown().html(msg);
-        }
+        this_form.find('.loading').slideUp();
+        this_form.find('.sent-message').slideDown();
+        this_form.find("input:not(input[type=submit]), textarea").val('');
+
+      },
+      error: function (jqXHR, exception) {
+        this_form.find('.loading').slideUp();
+        this_form.find('.error-message').slideDown();
       }
     });
     return false;
