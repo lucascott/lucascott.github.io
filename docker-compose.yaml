@@ -1,4 +1,3 @@
-version: "3"
 networks:
   frontend:
     external: true
@@ -8,10 +7,13 @@ services:
     build: .
     restart: always
     networks:
-      - frontend  
+      - frontend
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.lucascott-homepage.rule=Host(`www.lucascott.com`)"
       - "traefik.http.routers.lucascott-homepage.entrypoints=websecure"
       - "traefik.http.routers.lucascott-homepage.tls=true"
-      - "traefik.http.routers.lucascott-homepage.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.lucascott-homepage.tls.certresolver=letsencrypt-dns"
+      - "traefik.http.routers.lucascott-homepage.tls.domains[0].main=lucascott.com"
+      - "traefik.http.routers.lucascott-homepage.tls.domains[1].main=www.lucascott.com"
+      - "traefik.http.routers.lucascott-homepage.tls.domains[0].sans=*.lucascott.com"
