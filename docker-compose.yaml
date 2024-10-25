@@ -1,8 +1,8 @@
 networks:
-  reverse-proxy: {external: true}
+  reverse-proxy: { external: true }
 
 services:
-  homepage:
+  lucascott:
     build: .
     restart: unless-stopped
     networks:
