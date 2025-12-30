@@ -3,7 +3,7 @@ networks:
 
 services:
   lucascott:
-    image: ghcr.io/lucascott/lucascott:master
+    image: ghcr.io/lucascott/lucascott:main
     restart: unless-stopped
     networks:
       - reverse-proxy
