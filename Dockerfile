@@ -1,2 +1,2 @@
-FROM httpd:2.4
+FROM httpd:2-alpine
 COPY . /usr/local/apache2/htdocs/
